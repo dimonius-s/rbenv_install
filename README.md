@@ -1,1 +1,1 @@
-#rbenv install and add in .zshrc"
+rbenv install and add in .zshrc
