@@ -6,6 +6,9 @@ mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 rbenv install 3.0.0
 rbenv global 3.0.0
+sudo apt install zsh curl fonts-powerline
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+chsh --shell /bin/zsh
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 exec $SHELL
