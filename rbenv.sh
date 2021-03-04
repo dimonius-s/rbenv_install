@@ -1,3 +1,4 @@
+sudo apt install zsh curl fonts-powerline git
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 cd ~/.rbenv && src/configure && make -C src
 ~/.rbenv/bin/rbenv init
@@ -6,7 +7,6 @@ mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 rbenv install 3.0.0
 rbenv global 3.0.0
-sudo apt install zsh curl fonts-powerline
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh --shell /bin/zsh
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
